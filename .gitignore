@@ -1,0 +1,16 @@
+#ignora linux pasta
+venv/ 
+#ignora windows pasta
+.venv/
+
+#informações de variáveis de ambiente
+.env 
+
+#ignora pasta de arquivos do git
+file/
+
+#ignora pasta de logs do programa
+logs/
+
+#ignora pasta de cache python
+_pycache_/
