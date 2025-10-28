@@ -7,7 +7,7 @@ venv/
 .env 
 
 #ignora pasta de arquivos do git
-file/
+files/
 
 #ignora pasta de logs do programa
 logs/
