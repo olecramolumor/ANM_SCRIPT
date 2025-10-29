@@ -1,6 +1,7 @@
 from pathlib import Path
 import logging
 import downloads
+import insert 
 
 def setup_master_logging(log_file='processo_completo.log'):
         
@@ -33,6 +34,10 @@ def main():
     try:
         logger.info("--- Etapa 1: Download dos arquivos ---")
         downloads.main()
+        
+        logger.info("--- Etapa 2: Criação e Inserção de Tabela no Banco de Dados ---")
+        insert.main()
+
     
     except Exception as e:
         logger.error(f"O processo falhou em alguma etapa: {e}")
