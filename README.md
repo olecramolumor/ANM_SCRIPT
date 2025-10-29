@@ -1,3 +1,3 @@
 # Automação de coleta de dados anuais de Minerio Bruto no Brasil.
 Sistema de busca de dados automáticos da Ageência Nacional de Mineração (ANM) em busca de dados brutos de mineração no Anuário Mineral Brasileiro (AMB)
-1° projeto no GitHub, feito em conjunto com @eiraduan.
+1° projeto no GitHub, feito em conjunto com o inimigo da tecnologia @eiraduan, enquanto me ensinava Python.
