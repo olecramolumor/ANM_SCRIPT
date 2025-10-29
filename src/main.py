@@ -15,9 +15,8 @@ def setup_master_logging(log_file='processo_completo.log'):
     log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
     logging.basicConfig (
-
         level = logging.INFO,
-        forma = log_format,
+        format = log_format,
         handlers= [
             logging.FileHandler(log_path, mode = 'a', encoding='utf-8'),
             logging.StreamHandler()
@@ -31,5 +30,12 @@ def main():
 
     logger.info("Iniciando o Processo de ETL Completo!")
 
-    logger.info("--- Etapa 1: Download dos arquivos ---")
-    downloads.main()
+    try:
+        logger.info("--- Etapa 1: Download dos arquivos ---")
+        downloads.main()
+    
+    except Exception as e:
+        logger.error(f"O processo falhou em alguma etapa: {e}")
+
+if __name__ == "__main__":
+    main()
